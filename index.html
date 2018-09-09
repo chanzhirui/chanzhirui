@@ -3,25 +3,26 @@
         <title>Zhirui Chan's website </title>
  
 
-        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Fauna+One|Gugi" rel="stylesheet">
+
 
     </head>
 
     <style>
 
+       html{
+           
+        overflow-x:hidden
+       }
+
        body {
 
-           background-image: url("image/me.jpg");
-
-           background-size: contain;
-
-           margin:0;
+         background-color: white;
+         
+         margin:0;
        }
 
-       .tac {
-       	   text-align: center;
-           margin-top: 90px;
-       }
+       
 
         ul {
             list-style-type: none;
@@ -54,42 +55,132 @@
             background-color: #FFFFFF;
            }
 
-       h1{
-       	  font-size: 75px;
-       	  font-family: 'Lobster', cursive;
-          color: white;
+       p{
+       	  font--size: 60px;
+          font-family: 'Fauna One', serif;
+          font-family: 'Gugi', cursive;
        }
 
-       p{
-       	  font--size: 50px;
+       .secimg{
+           
+           height: 400;
+
+           position: absolute;
+
+           top:370px;
+
+           left: 550px;
+
        }
+
+       .imgplace{
+
+          height: 600;
+
+          position: relative;
+
+          top: -450px;
+
+          left: 50px;
+
+       }
+
+       .hello{
+
+          position: relative;
+          left: 950;
+          top: 90;
+          font-size: 50px;
+          font-family: 'Fauna One', serif;
+          font-family: 'Gugi', cursive;
+          color: Tan;
+
+       }
+
+       .name{
+
+          position: relative;
+          left: 800;
+          top: 90;
+          font-size: 30px;
+          font-family: 'Fauna One', serif;
+          font-family: 'Gugi', cursive;
+          color: grey;
+ 
+
+       }
+
+       .major{
+
+           position: relative;
+           left: 950;
+           top: 100;
+           font-size: 20px;
+           font-family: 'Fauna One', serif;
+           font-family: 'Gugi', cursive;
+           color: Sienna;
+
+        }
+
+        .major2{
+
+            font-size: 20px;
+            position: relative;
+            left:1000;
+            top:110; 
+            font-family: 'Fauna One', serif;
+            font-family: 'Gugi', cursive;
+            color: black;              
+
+
+            
+        }
+    
         
         /* 1vw =1/100 browser width */
 
-
-       .img{
-       	  position: absolute;
-       	  left: 50%;
-       	  transform: translate(-50%, 0);
-       	  width: 30vw;
-       }
      </style>
 
      <body>
+        
+        <div class="hello"/>
+               
+               <h1>Hello</h3>
+        </div>
 
-        <h1 class="tac"> Zhirui Chan </h1>
+        <div class="name"/>
+
+                <h3>This is </h3> 
+                <h1> Miss.Chan Chan </h1>
+
+         </div>
+
+         <div class="major"/>
+
+                 <h1> Graphic Designer& </h1>
+
+         </div>
+
+         <div class="major2"/>
+
+                 <h1> UI design </h1>
+
+          </div>
+
+
+
+
+
+        <img src="image/me2.png"/ alt="me2" class="secimg">     
+        <img src="image/mecircle.png" alt="me " class="imgPlace" />
+        
 
         <ul>
         <li><a class="active" href="#home">home</a></li>
         <li><a href="#news">Porfolio</a></li>
-        <li><a href="#contact">About me</a></li>
         <li><a href="#about">Contact me</a></li>
         </ul>
         
-        <p class="tac">  Hello! My name is Zhirui Chan~ </p>
-
- 
-
-    </p>
+       
      </body>
 </html>
