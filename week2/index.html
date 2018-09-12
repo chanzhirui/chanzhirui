@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> week2 </title>
+	   <link rel="stylesheet" type="text/css" href="css/index.css">
+	       <script type="text/javascript" src="javascript/main.js"></script>
+	       <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Amatic+SC|Gamja+Flower|Gloria+Hallelujah" rel="stylesheet">
+	       <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+     </head>
+<style>
+
+    body {
+    	background-image:url('image/starrysky.gif');
+    }
+
+    h1{
+
+	   font-size: 100px;
+	   font-family: 'Gloria Hallelujah', cursive;
+       font-family: 'Gamja Flower', cursive;
+       font-family: 'Abril Fatface', cursive;
+       font-family: 'Amatic SC', cursive;
+       color: white;
+     }
+    
+    p{
+       font-size: 20px;
+       font-family: 'Lato', sans-serif;
+       color: white;
+     
+     }
+
+</style>
+
+<body>
+	<center>
+	<div class="title">
+       <h1> STARS </h1>
+           </div>
+    <div class="paragraph">
+        <p> Stars, like jewels, in the <span id="one"></span></p>
+        <p> cast their <span id="second"></span> midnight bright.</p>
+        <p>Topaz, blue and <span id="third"></span> red,</p>
+        <p><span id="fourth"></span> of stars above my head.</p>
+        <p> I stand in awe to see them there,</p>
+        <p>brightly <span id="fifth"></span> in the air.</p> 
+        <p>Lit from the frame of the Creator's light,</p>
+        <p>burning away all <span id="seventh"></span> the night.</p>
+    </div>
+
+    <script type="text/javascript">
+		var one,second,third,fourth,fifth,sixth;
+		var random_o = Math.floor(Math.random() * 3);  
+		var random_s = Math.floor(Math.random() * 3); 
+		var random_t = Math.floor(Math.random() * 3);   
+		var random_f = Math.floor(Math.random() * 3);  
+		var random_fi = Math.floor(Math.random() * 3);
+		var random_sv = Math.floor(Math.random() * 3);    
+  
+
+		one = ["night", "sky", "dark"];
+		second = ["lovely", "mysterious", "beautiful"];
+		third = ["misty", "vague", "blear"];
+		fourth = ["myriad","plently","lots"];
+		fifth = ["shining","twinkling","sparkling"];
+		seventh =["fun","joyful","happy"];
+
+    	document.getElementById("one").innerHTML = one[random_o]; 
+    	document.getElementById("second").innerHTML = second[random_s]; 
+    	document.getElementById("third").innerHTML = third[random_t]; 
+    	document.getElementById("fourth").innerHTML = fourth[random_f]; 
+    	document.getElementById("fifth").innerHTML = fifth[random_fi]; 
+    	document.getElementById("seventh").innerHTML = seventh[random_sv]; 
+	</script>
+
+
+</center>
+</body>
+</html>
