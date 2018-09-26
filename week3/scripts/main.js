@@ -37,7 +37,7 @@ var sunmadecheese = {
 
     },
     {
-    	 nametest2: 'B. Solar Milk and Cheese plate',
+    	 nametest: 'B. Solar Milk and Cheese plate',
     	 price: 'Price: Pledged US$ 98 or more',
     	 includes: ['Include: Solar Milk, Cheese Plate (with USBrid'],
     	 available: false
@@ -55,8 +55,8 @@ image.src = sunmadecheese.img;
 var descriiption = document.getElementById('description'); 
 descriiption.textContent = sunmadecheese.description;
 
-var testname = document.getElementById('nametest');
-testname.textContent = sunmadecheese.nametest;
+var nametest = document.getElementById('nametest');
+nametest.textContent = sunmadecheese.nametest;
 
 var link = document.getElementById('link');
 link.textContent = sunmadecheese.link;
@@ -83,31 +83,50 @@ var seconds = document.getElementById('seconds');
 seconds.textContent = timeleft[3];
 
 
-
 var pledgelevelone = document.getElementById('pledgelevelone');
-pledgelevelone.textContent = sunmadecheese.pledgelevels[0].nametest;
+// pledgelevelone.textContent = sunmadecheese.pledgelevels[0].namepledgelevelone;
 
 var pledgeleveltwo = document.getElementById('pledgeleveltwo');
-pledgeleveltwo.textContent = sunmadecheese.pledgelevels[0].price;
+// pledgeleveltwo.textContent = sunmadecheese.pledgelevels[0].price;
 
 var pledgelevelthree = document.getElementById('pledgelevelthree');
-pledgelevelthree.textContent = sunmadecheese.pledgelevels[0].includes;
+// pledgelevelthree.textContent = sunmadecheese.pledgelevels[0].includes;
 
 var pledgelevelfour = document.getElementById('pledgelevelfour');
-pledgelevelfour.textContent = sunmadecheese.pledgelevels[0].available;
+// pledgelevelfour.textContent = sunmadecheese.pledgelevels[0].available;
 
 
 var pledgelevelfive = document.getElementById('pledgelevelfive');
-pledgelevelfive.textContent = sunmadecheese.pledgelevels[1].nametest2;
+// pledgelevelfive.textContent = sunmadecheese.pledgelevels[1].namepledgelevelone2;
 
 var pledgelevelsix = document.getElementById('pledgelevelsix');
-pledgelevelsix.textContent = sunmadecheese.pledgelevels[1].price;
+// pledgelevelsix.textContent = sunmadecheese.pledgelevels[1].price;
 
 var pledgelevelseven = document.getElementById('pledgelevelseven');
-pledgelevelseven.textContent = sunmadecheese.pledgelevels[1].includes;
+// pledgelevelseven.textContent = sunmadecheese.pledgelevels[1].includes;
 
 var pledgeleveleight = document.getElementById('pledgeleveleight');
-pledgeleveleight.textContent = sunmadecheese.pledgelevels[1].available;
+// pledgeleveleight.textContent = sunmadecheese.pledgelevels[1].available;
+
+
+for (let i = 0; i < sunmadecheese.pledgelevels.length; i++) {
+	if(i === 0 ){
+		pledgelevelone.textContent = sunmadecheese.pledgelevels[i].nametest;
+        pledgeleveltwo.textContent = sunmadecheese.pledgelevels[i].price;
+        pledgelevelthree.textContent = sunmadecheese.pledgelevels[i].includes;
+        pledgelevelfour.textContent = sunmadecheese.pledgelevels[i].available;
+    }
+    if(i === 1 ){
+    	pledgelevelfive.textContent = sunmadecheese.pledgelevels[i].nametest;
+    	pledgelevelsix.textContent = sunmadecheese.pledgelevels[i].price;
+    	pledgelevelseven.textContent = sunmadecheese.pledgelevels[i].includes;
+    	pledgeleveleight.textContent = sunmadecheese.pledgelevels[i].available;
+    }
+   
+    	}
+
+
+
 
 
 
