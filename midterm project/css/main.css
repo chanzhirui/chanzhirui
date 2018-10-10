@@ -1,0 +1,56 @@
+
+   body{ background-color: white;
+
+}
+   h1{
+   	font-size: 65px;
+   	color: red;
+   	font-family: 'Josefin Sans', sans-serif;
+   	margin-left:400px
+   }
+   
+   .picture{
+   	width: 120px;
+   	height: 120px;
+   
+   }
+
+.picture:hover{
+	transform: scale(1.2,1.2);
+}
+
+.table2{
+	position: absolute;
+	top:25%;
+	left:45%;
+}
+
+.timer{
+	z-index: 9999;
+	position: absolute;
+	font-size: 70;
+	margin-left: 290px;
+	margin-top: 260px;
+	color: red;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.timerp{
+	position: absolute;
+	height: 180px;
+	width: 290px ;
+	margin-left: 230px;
+	margin-top: 200px;
+}
+
+.goback{
+	position: absolute;
+	height: 180px;
+	width: 290px ;
+	margin-left: 230px;
+	margin-top: 450px;
+}
+
+.goback:hover {
+	transform: scale(1.2,1.2);
+}

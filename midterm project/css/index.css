@@ -1,0 +1,43 @@
+.start img{
+     position: absolute;
+	 height: 180px ;
+	 width: 170px;
+	 z-index: 9999;
+	 margin-top: 280px;
+	 margin-left: 620px;
+     
+}
+
+.start:hover{
+	transform: scale(1.1,1.1);
+}
+
+
+
+body{
+	background-image: url('../img/background.jpg');
+	
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+
+}
+
+h1{
+	font-size: 60px;
+	position: absolute;
+	margin-top: 320px;
+	margin-left: 150px;
+	font-family: 'Josefin Sans', sans-serif;
+	color: pink;
+}
+
+h2  {
+	font-size: 60px;
+	position: absolute;
+	margin-top: 320px;
+	margin-left: 850px;
+	font-family: 'Josefin Sans', sans-serif;
+	color: pink;
+
+}
