@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homework 4</title>
+	<link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
+</head>
+<body>
+	<style>
+		body{ 
+			
+			background-color: pink; 
+
+
+		}
+		li{
+			display: block;
+			color: black;
+			margin-top: 25px;
+		}
+		ul{
+			list-style-type: none; 
+  			font-family: 'Arial', san-serif;
+		}
+		/*#title{
+			font-size: 50px;
+			background-color: pink;
+			color: white;
+			margin-top: 20px;
+			width: 100vw;
+			height: 200px;
+			left:0px;
+			text-align: center;
+
+		}
+*/
+	   header{
+        height: 200px;
+        width: 100vw;
+        background-color:rgb(244, 66, 101);
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+		#menu{
+			position: absolute;
+			font-size: 20px;
+			background-color: pink;
+			width: 100vw;
+			height: 60px;
+			left:0px;
+			padding: 30px;
+			text-align: left;
+			margin-top: 150px;
+			
+		}
+
+		/*effect-underline*/
+		.effect-underline:after {
+		content: '';
+  		position: relative;
+  		left: 0;
+  		display: inline-block;
+  		height: 1em;
+  		width: 100%;
+ 		border-bottom: 1px solid;
+ 		margin-top: 10px;
+ 		opacity: 0;
+ 		color: white;
+		-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+		transition: opacity 0.35s, transform 0.35s;
+		-webkit-transform: scale(0,1);
+		transform: scale(0,1);
+		}
+		.effect-underline:hover:after {
+  		opacity: 1;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		color: white;
+		}
+		/**/
+
+		.sublist {
+  			position: absolute;
+  			left: 0px;
+  			top: 280px;
+  			width: 25%;
+  			background-color: pink;
+  			padding: 20px;
+  			/*z-index: 1;*/
+
+  		}
+  		.sublistitem{
+  			text-align: center;
+  			color: black;
+  			font-size: 15px;
+  		}
+		
+		.hide { display: none; }
+		.recipe1 {
+			position: absolute;
+			width: 950px;
+			background-color: white;
+			margin-left: 380px;
+			margin-top: 300px;
+			display: flex;
+			flex-wrap: wrap;
+			display: none;
+		}
+		.recipe2{
+			position: absolute;
+			width: 950px;
+			background-color: white;
+			margin-left: 380px;
+			margin-top: 300px;
+			display: flex;
+			flex-wrap: wrap;
+			display: none;
+		}
+		.recipe3 {
+			position: absolute;
+			width: 950px;
+			background-color: white;
+			margin-left: 380px;
+			margin-top: 300px;
+			display: flex;
+			flex-wrap: wrap;
+			display: none;
+		}
+		
+		.webname{
+			color: white;
+			font-family: 'Mali', cursive;
+			font-size: 60px;
+		}
+		
+		h1{
+			margin-left: 20px;
+			width: 100%;
+		}
+		#name{
+			margin-left: 30px;
+			font-size: 24px;
+			color: #686868;
+		}
+		.recipeimg {
+			width: 90%;
+			height: 90%;
+			margin-top: 5px;
+			margin-left: 5%;
+		}
+		#description{
+			width: 90%;
+			margin-left: 5%;
+			color: #686868;
+		}
+		#box1{
+			position: relative;
+			height: 200px;
+			width:30%;
+			display: inline-block;
+			margin-left: 25px;
+			
+			color: rgb(244, 66, 101);
+		}
+		
+		#ingre{ font-size: 50px; }
+		#box2{
+			position: relative;
+			width:60%;
+			display: inline-block;
+			left:50px;
+			color: rgb(244, 66, 101);
+		}
+		#prep{
+			margin-left: 25px;
+			font-size: 50px;
+		}
+
+
+	</style>
+	<header>  <h1 class="webname">Dessert recipes</h1> </header>
+<div id="container">
+	<ul id="menu">
+		<li class="list effect-underline">See what we have</li>
+	</ul>
+	<ul class="food-recipe sublist hide">
+		<li class="sublistitem effect-underline" data-type="recipe1">Cookie cup</li>
+		<li class="sublistitem effect-underline" data-type="recipe2">Eggnog Tres Leches Cake</li>
+		<li class="sublistitem effect-underline" data-type="recipe3">Fresh Strawberry Pie</li>
+		<!-- <li class="sublistitem effect-underline" data-type="recipe4">Cranberry Ice with Prosecco</li> -->
+	</ul>
+</div>
+	<div class="food recipe1">
+		<h1><br>Cookie Cup</h1>
+	    <img class="recipeimg" src="image/cupcake.jpg">
+		<div id="box1">
+			<div id="ingre">Ingredients</div>
+			<div><br><br>1 pouch (17.5 oz) Betty Crocker™ sugar cookie mix Butter and egg called for on cookie mix pouch for drop cookies<br><br>1/4 cup plus 2 teaspoons red, green and white candy sprinkles<br><br>1
+			container Betty Crocker™ Rich & Creamy vanilla frosting<br><br>1 1/2 teaspoons Betty Crocker™ red gel food color</div>
+		</div>
+		<div id="box2">
+			<div id="prep">Steps</div>
+			<div>
+				<br>1 Heat oven to 375°F. Spray 36 mini muffin cups with cooking spray. <br><br> 2
+				In large bowl, mix cookie mix, softened butter and egg with spoon until soft dough forms. Stir in 1/4 cup candy sprinkles. Shape into 36 (1 1/4-inch) balls. Place in mini muffin cups. Press indentation in center of each with end of wooden spoon.<br><br>3 Bake 8 to 10 minutes or until light golden brown. Immediately repeat indentation into center of each cookie with end of clean wooden spoon to make 1-inch opening, cleaning off end with paper towel when needed. Cool in pan 20 minutes. Loosen edges with small knife if needed. Remove to cooling rack. Cool completely, at least 30 minutes.<br><br>4
+				In small bowl, place half of the frosting. Tint red with food color. Place large piping bag fitted with medium star tip on its side. Using large icing spatula, spoon remaining vanilla frosting so it covers half of the length of side of piping bag. Carefully spoon red tinted frosting on top. Insert tip into indentation in each cookie cup. Squeeze bag to fill opening, and pipe about 2 heaping teaspoons per cookie cup. Sprinkle with remaining 2 teaspoons sprinkles. Store loosely covered at room temperature. <br>
+				
+			</div>
+		</div>
+	</div>
+	<div class="food recipe2">
+		<h1>Eggnog Tres Leches Cake</h1>
+		
+		<img class="recipeimg" src="image/cake.jpg">
+		
+		<div id="box1">
+			<div id="ingre">Ingredients</div>
+			<div>
+				<br>1 box Betty Crocker™ Super Moist™ yellow cake mix 1 cup milk
+				cup butter, melted<br>3 eggs<br><br>1
+				can (14 oz) sweetened condensed milk (not evaporated)<br><br>1
+				cup milk<br><br>1 cup heavy whipping cream<br><br>1/4
+				cup bourbon<br><br>1/2 teaspoon ground nutmeg<br><br>1 1/2
+				cups heavy whipping cream<br><br>
+			</div>
+		</div>
+		<div id="box2">
+			<div id="prep">Steps</div>
+			<div>
+				<br>Heat oven to 350°F. Spray bottom only of 13x9-inch pan with cooking spray.
+					2
+					In large bowl, beat Cake ingredients with electric mixer on medium speed 2 minutes, scraping bowl occasionally. Pour into pan.
+					3
+					Bake 26 to 30 minutes or until toothpick inserted in center comes out clean. Remove cake from oven to cooling rack. Immediately poke holes using fork over top of cake, wiping fork tines occasionally with paper towel to reduce sticking.
+					4
+					In medium bowl, stir together Filling ingredients until blended. Evenly pour over cake, working back and forth to fill holes. Refrigerate uncovered 2 hours or until chilled (when cutting pieces to serve, you may notice some of the liquid in bottom of pan).
+					5
+					In chilled medium bowl, beat Topping ingredients with electric mixer on medium-high speed until stiff peaks form. Frost top of chilled cake with whipped cream. Sprinkle 1/4 teaspoon nutmeg on top. Cut into 5 rows by 3 rows. Store loosely covered in refrigerator.<br>
+			</div>
+		</div>
+	</div>
+	<div class="food recipe3">
+		<h1>Fresh Strawberry Pie</h1>
+		<img class="recipeimg" src="image/strawberry.jpg">
+		
+		<div id="box1">
+			<div id="ingre">Ingredients</div>
+			<div>
+				<p>1 pie crust from 1 box Immaculate Baking Co.™ ready-to-bake pie crusts, softened as directed on box</p>
+				<p>3 pints (6 cups) fresh strawberries</p>
+				<p>1 cup sugar </p>
+				<p>3 tablespoons cornstarch </p>
+				<p>1/2 cup water</p>
+
+
+
+		   	</div>
+		</div>
+		<div id="box2">
+			<div id="prep">Steps</div>
+			<div>1
+				Heat oven to 400°F. Bake pie crust as directed on box for One-Crust Pie, using 9-inch glass pie plate. Cool completely on cooling rack, about 15 minutes.2 Meanwhile, in small bowl, crush enough strawberries to make 1 cup. In 2-quart saucepan, mix sugar and cornstarch; stir in crushed strawberries and water. Cook, stirring constantly, until mixture boils and thickens. If desired, stir in red food color. Cool completely, about 30 minutes. 3 Place remaining strawberries, whole or sliced, in cooled baked shell. Pour cooked strawberry mixture evenly over berries. Refrigerate until set, about 3 hours, before serving. 4 Cover and refrigerate any remaining pie.</div>
+		</div>
+	</div>
+	
+	
+<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
