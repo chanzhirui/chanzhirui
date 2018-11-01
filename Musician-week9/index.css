@@ -10,12 +10,18 @@
 
 
 ul {
+    position: fixed;
     list-style-type: none;
     margin: 0;
+    z-index: 100;
+    top:0;
+    left: 0;
+    width: 100vw;
     height: 50px;
     padding: 0;
     overflow: hidden;
-    background-color: white;
+    background-color: black;
+    color: white;
 }
 
 
@@ -24,11 +30,12 @@ li {
     display: block;
     text-align: center;
     padding: 14px 16px;
+    color: white;
     text-decoration: none;
 }
 
 li :hover {
-    background-color: #111;
+    background-color: white;
 }
 
 .Animation {
