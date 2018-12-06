@@ -1,0 +1,661 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Availability Calendar</title>
+<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<link href="dist/equinox.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700" rel="stylesheet">
+<style>
+body { 
+	background-color: white;
+	font-family: 'Roboto'; 
+	min-height:100vh；
+  width: 100vw;
+	 }
+
+html, body{   
+  overflow-x: hidden;
+}
+
+h1 { 
+	font-family: 'Courgette', cursive;
+	color: white;
+	margin:150px auto 30px auto; 
+	text-align:center;
+}
+
+.home-section{
+
+  height: 100vh;
+}
+
+.logo{
+
+  height: 200px;
+	width: 270px;
+
+
+}
+
+#navbar {
+  overflow: hidden;
+  position: fixed;
+  width: 100vw;
+  z-index: 99;
+  background-color: rgb(230, 0, 92);
+}
+
+#navbar a {
+  font-family: 'Courgette', cursive;
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #FFEB3B;
+  
+}
+
+.active {
+  background-color: #FFEB3B;
+  /*color: white;*/
+}
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.tops {
+  margin: 0;
+  /*margin-bottom: 0;*/
+	padding: 10px;
+	font-size: 20px;
+	text-align: center;
+	background-color: #C2185B;
+	color: white;
+	display: block;
+  margin-top: 50px;
+	font-family: 'Courgette', cursive;
+}
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.hero-image {
+  width:100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/home.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
+
+.hero-container{
+  height:300px;
+  width:500px;
+  text-align: center;
+}
+
+
+ {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.buttons {
+    color: white;
+    margin: 10%;
+    text-align: center;
+    font-family: 'Courgette', cursive;
+    
+}
+
+.btn-hover {
+    width: 200px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    font-family: 'Courgette', cursive;
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-10 {
+        background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a , #FBB03B);
+    box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+}
+
+.btn-hover a{
+  text-decoration:none;
+  color: white;
+
+}
+
+
+.event-calendar{
+  margin-top: 43px;
+}
+
+
+.lastest-schedule{
+  margin-top: 50px;
+  font-size: 40px;
+  font-family: 'Courgette', cursive;
+  text-align: center;
+  color: #C2185B;
+
+}
+
+{box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+.explore-container{
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.explore-title{
+
+  font-size: 45px;
+  color: #C2185B;
+  text-align:center;
+  font-family: 'Courgette', cursive;
+
+}
+
+.text1{
+  display: flex;
+  width: 100vw;
+  background-color: #C2185B;
+  height: 400px;
+}
+
+
+
+.texthere{
+  font-family: 'Courgette', cursive;
+  font-size: 25px;
+  color: white;
+  width: 50%;
+  margin-top: 20px;
+  padding-bottom: 50px;
+  height: 300px;
+  display: inline-block;
+/*  margin-left: 50px;
+  margin-right: 10px;*/
+}
+
+.zjy{
+  display: inline-block;
+  width: 50%;
+  height: 400px;
+  background-image: url('img/zjy.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
+}
+
+.row2{
+  display: flex;
+  width: 100vw;
+  background-color: #C2185B;
+  height: 400px;;
+}
+
+.text2{
+  width: 50%;
+}
+
+.text2here{
+  font-family: 'Courgette', cursive;
+  font-size: 25px;
+  color: white;
+  /*margin-left: 30px;
+  margin-right: 20px;*/
+  /*margin-top: 20px;*/
+  padding-bottom: 50px;
+  height: 300px;
+  display: inline-block;
+
+
+}
+
+.cl{
+  display: inline-block;
+  width: 50%;
+  height: 400px;
+  background-image: url('img/cl.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
+
+}
+
+
+.reservation-section{
+  background-color: #C2185B;
+}
+
+.phonehere{
+  padding-left: 200px;
+  padding-top: 50px;
+}
+
+.phone{
+  display: block;
+  height: 300px;
+  
+}
+
+.email{
+  display: block;
+  height: 300px;
+  background-color:#C2185B;
+}
+
+.emailhere{
+  padding-left: 200px;
+  padding-top: 30px;
+
+
+}
+
+.emailus {
+    border: 2px solid white;
+    color: white;
+    background-color: #C2185B;
+    padding: 14px 28px;
+    font-size: 16px;
+}
+
+.emailus:hover {
+
+    background-color: white;
+    color: #C2185B;
+}
+
+.buttonhere{
+  color: white;
+  text-align: center;
+  text-decoration:none;
+}
+
+
+
+
+/*.row{
+  white-space: nowrap;
+}
+
+.column{
+  height: 370px;
+  width:50%;
+  display: inline-block;
+  background-image: url("img/zjy.jpg"); 
+  background-repeat: no-repeat;
+  background-size: 700px 500px;
+}
+
+.column2{
+  position: absolute;
+  height: 400px;
+  width: 50%;
+  display: inline-block;
+  white-space: normal;
+  background-color: #C2185B;
+
+}
+
+.row2{
+  white-space: nowrap;
+  margin-top: 30px;
+}
+
+.textbox2{
+  display: inline-block;
+  width: 45%;
+  white-space: normal;
+  background-color: #f588a5;
+
+}
+
+.column3{*/
+  /*position: relative;
+  /*width: 50%;
+  display: inline-block;
+  background-image: url("img/zjy.jpg"); 
+  background-repeat: no-repeat;
+  background-size: 700px 500px;
+
+}*/
+
+footer{
+  height: 50px;
+}
+
+
+</style>
+</head>
+<body>
+  
+  <div id="navbar">
+      <a id="home1" class="active" href="#home-section">Home</a>
+      <a id="explore1" href="#explore-section">Expore</a>
+      <a id="calendar1" href="#calendar-section">Availability</a>
+      <a id="reservation1" href="#reservation-section">Customer Service</a>
+  </div>
+
+  <p class="tops"> May our company wish you a merry Christmas and a successful New Year. &nbsp; &nbsp; &nbsp; Call: 914-923-7636</p>
+
+<!-- ================= home ================= -->
+<section id="home-section" class="home-section">
+
+  <div class="hero-image">
+      <div class="hero-container">
+          <img class="logo" src="img/logo.png">
+          <div class="flex">
+            <button class="btn-hover color-10"><a id="botton-css" href="#calendar-section">Check availbility</a></button>
+          </div>
+          <!-- <button class="button"><span>Check availbility</span></button> -->
+      </div>
+  </div>
+</section>
+
+
+<!-- ================= explore ================= -->
+
+<section id="explore-section">
+
+  <p class="explore-title"> Explore </p>
+
+  <!-- ------------------ First row ----------------------- -->
+
+  <div class="explore-container">
+    <div class="text1">
+      <div class="texthere">
+        <h6 style="font-size: 30px; font-family: 'Courgette', cursive; text-align: center; "> Manicures </h6>
+        <p class="Manicures" style="margin-left: 40px; margin-right: 40px;">
+          Our manicures use the finest products and always include a special relaxing aromatherapy hand and lower arm massage.  Nails are carefully and meticulously prepped and then polished to perfection.
+        </p>
+      </div>
+      <div class="zjy">
+<!--       <img src="img/zjy.jpg" style="width: 100%"> -->
+      </div>
+    </div>
+
+
+    <!-- ------------------ second row ----------------------- --> 
+
+      <div class="row2">
+        <div class="cl">
+          <!-- <img src="img/sf.jpg" style="width: 100%"> -->
+        </div>
+        <div class="text2">
+          <div class="text2here">
+            <h6 style="font-size: 30px; font-family: 'Courgette', cursive; text-align: center; ">Pedicures</h6>
+            <p style="margin-left: 40px; margin-right: 40px;">Our pedicures are thorough and deeply relaxing.  Each pedicure incorporate special massage techniques specifically developed for feet and lower legs. Toenails are meticulously prepped and polished to perfection.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+</section>
+
+<!-- ================= calendar ================= -->
+<section class="event" id="calendar-section">
+
+
+  <h1 class="lastest-schedule"> Event & Promotions </h1>
+  
+  <div class="event-calendar"></div>
+
+</section>
+
+
+
+  
+
+
+  <!-- <div class="title-explore"> Explore us</div>
+
+  <div class="row">
+    <div class="column">
+        <img src="img/zjy.jpg" alt="Snow" style="width:100%; height: 370px;"> -->
+    <!-- </div>
+       <div class="column2">
+          <div class="textbox">
+              <h3> Manicure </h3>
+              <p> Our manicures use the finest products and always include a special relaxing aromatherapy hand and lower arm massage.  Nails are carefully and meticulously prepped and then polished to perfection. </p>
+          
+          </div>
+      </div>
+  
+  </div>
+
+    <div class="row2">
+      <div class="textbox2">
+         <div class="column4">
+          <h3>Pedicures</h3>
+          <p>Our pedicures are thorough and deeply relaxing.  Each pedicure incorporate special massage techniques specifically developed for feet and lower legs. Toenails are meticulously prepped and polished to perfection.</p>
+        </div>
+      </div>
+      <div class="column3">
+        <img src="img/cl.jpg" style="width: 100%; ">  -->
+      <!-- </div> -->
+  <!-- </div> -->
+
+
+<!-- ================= Make a reservation ================= -->
+
+<section id="reservation-section">
+  <div id= "reservation">
+      <h1 class="reservation-title"  style="color: #C2185B;  font-size: 45px; ">Customer Service</h1>
+      <div class="email">
+        <div class="emailhere">
+          <img src="img/email.png" style="display: inline-block;">
+          <h3 style="font-size: 35px; color: white; font-family: 'Courgette', cursive; display: inline-block;"> Email </h3>
+          <p style="color: white;"> If you want to make a reservation or have any feedback, please feel free to reach us by mail. </p>
+          <button class="emailus"><a class="buttonhere" href="mailto:ohimdebby@gmail.com">Email us</a></button>
+      </div>
+      </div>
+      <div class="phone">
+        <div class="phonehere">
+          <img src="img/phone.png" style="display: inline-block;">
+          <h3 style="font-size: 35px; color:#C2185B ; font-family: 'Courgette', cursive; display: inline-block;"> Telephone</h3>
+          <p style="color:#C2185B; "> Call: 914-923-7636</p>
+          <p style="color:#C2185B;"> Monday - Sunday 11am - 8pm</p>
+        </div>
+      </div>
+      </div>
+  </div>
+</section>
+
+<footer></footer>
+
+
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+  <script src="dist/equinox.min.js"></script>
+
+<script>
+
+  $('#navbar a').on('click', function(){
+    $('#navbar a.active').removeClass('active');
+    $(this).addClass('active');
+});
+		// window.onscroll = function() {myFunction()};
+
+		// var navbar = document.getElementById("navbar");
+		// var sticky = navbar.offsetTop;
+
+		// function myFunction() {
+		//   if (window.pageYOffset >= sticky) {
+		//     navbar.classList.add("sticky")
+		//   } else {
+		//     navbar.classList.remove("sticky");
+		//   }
+		// }
+</script>
+<!-- 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+	</script> -->
+  
+
+
+  <script type="text/javascript">
+
+
+
+    // window.addEventListener("scroll", function(e) {
+  
+    //     let top = window.scrollY;
+          
+    //       if (top > 200 ){
+    //         $('#navbar').css('top', '0');
+    //       }
+    //       console.log(top);
+    //  });
+
+
+    
+
+  </script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+        let homeHeight = $('#home-section').height();
+        let calendarHeight = $('#calendar-section').height();
+        let exploreHeight =$ ('#explore-section').height();
+      
+
+      $('#home1').click(function(){
+        $('html, body').animate({scrollTop: 0}, 1000);
+        console.log($(window).scrollTop());
+      }); 
+      $('#calendar1').click(function(){
+        // console.log(homeHeight);
+        $('html, body').animate({scrollTop: homeHeight + exploreHeight + 90}, 1000);
+      });
+
+      $('#botton-css').click(function(){
+        // console.log(homeHeight);
+        $('html, body').animate({scrollTop: homeHeight + exploreHeight + 90}, 1000);
+      });
+
+      $('#explore1').click(function(){
+        $('html, body').animate({scrollTop: homeHeight + 50}, 1000);
+      });
+      $('#reservation1').click(function(){
+        $('html, body').animate({scrollTop: homeHeight + calendarHeight + exploreHeight + 200}, 1000);
+      });
+    });
+</script>
+
+
+
+<script>
+	$('.event-calendar').equinox({
+	events: [{
+		start: '2018-12-25 00:00',
+		end: '2018-12-28 6:00',
+		title: '1. We open on Christmas. Christmas week Promotion: 20% off spa and massage ( 12/25 ~ 12/28) 2. Linda off tofay',
+		url: '#',
+		class: '',
+		color: '#FFFFFF',
+		data: {}}],
+    });
+	
+
+  // [{
+  //   start: '2018-12-13 00:00',
+  //   end: '2018-12-14 6:00',
+  //   title: 'Due to the maintanc',
+  //   url: '#',
+  //   class: '',
+  //   color: '#FFFFFF',
+  //   data: {}}],
+  //   f
+  
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>
