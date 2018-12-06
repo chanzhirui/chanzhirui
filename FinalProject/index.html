@@ -4,13 +4,21 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Availability Calendar</title>
+<title>Welcome to Beauty nails & spa</title>
 <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 <link href="dist/equinox.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Kaushan+Script'" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700" rel="stylesheet">
+
+
+
 <style>
+
+
+
+
 body { 
 	background-color: white;
 	font-family: 'Roboto'; 
@@ -67,8 +75,8 @@ h1 {
 }
 
 .active {
-  background-color: #FFEB3B;
-  /*color: white;*/
+  background-color: #C2185B;
+  
 }
 
 
@@ -84,7 +92,6 @@ h1 {
 
 .tops {
   margin: 0;
-  /*margin-bottom: 0;*/
 	padding: 10px;
 	font-size: 20px;
 	text-align: center;
@@ -179,6 +186,11 @@ body, html {
 }
 
 
+#calendar-section{
+  margin-top: 300px;
+}
+
+
 .event-calendar{
   margin-top: 43px;
 }
@@ -204,19 +216,15 @@ body {font-family: Verdana, sans-serif; margin:0}
     box-sizing: border-box;
 }
 
+
+#explore-section{
+  margin-top: 300px;
+}
+
 .explore-container{
   margin: 0 auto;
   width: 100%;
   margin-top: 100px;
-}
-
-.explore-title{
-
-  font-size: 45px;
-  color: #C2185B;
-  text-align:center;
-  font-family: 'Courgette', cursive;
-
 }
 
 .text1{
@@ -237,8 +245,7 @@ body {font-family: Verdana, sans-serif; margin:0}
   padding-bottom: 50px;
   height: 300px;
   display: inline-block;
-/*  margin-left: 50px;
-  margin-right: 10px;*/
+
 }
 
 .zjy{
@@ -266,9 +273,6 @@ body {font-family: Verdana, sans-serif; margin:0}
   font-family: 'Courgette', cursive;
   font-size: 25px;
   color: white;
-  /*margin-left: 30px;
-  margin-right: 20px;*/
-  /*margin-top: 20px;*/
   padding-bottom: 50px;
   height: 300px;
   display: inline-block;
@@ -289,7 +293,8 @@ body {font-family: Verdana, sans-serif; margin:0}
 
 
 .reservation-section{
-  background-color: #C2185B;
+
+  margin-top: 300px;
 }
 
 .phonehere{
@@ -338,53 +343,6 @@ body {font-family: Verdana, sans-serif; margin:0}
 
 
 
-
-/*.row{
-  white-space: nowrap;
-}
-
-.column{
-  height: 370px;
-  width:50%;
-  display: inline-block;
-  background-image: url("img/zjy.jpg"); 
-  background-repeat: no-repeat;
-  background-size: 700px 500px;
-}
-
-.column2{
-  position: absolute;
-  height: 400px;
-  width: 50%;
-  display: inline-block;
-  white-space: normal;
-  background-color: #C2185B;
-
-}
-
-.row2{
-  white-space: nowrap;
-  margin-top: 30px;
-}
-
-.textbox2{
-  display: inline-block;
-  width: 45%;
-  white-space: normal;
-  background-color: #f588a5;
-
-}
-
-.column3{*/
-  /*position: relative;
-  /*width: 50%;
-  display: inline-block;
-  background-image: url("img/zjy.jpg"); 
-  background-repeat: no-repeat;
-  background-size: 700px 500px;
-
-}*/
-
 footer{
   height: 50px;
 }
@@ -396,7 +354,7 @@ footer{
   
   <div id="navbar">
       <a id="home1" class="active" href="#home-section">Home</a>
-      <a id="explore1" href="#explore-section">Expore</a>
+      <a id="explore1" href="#explore-section">Explore</a>
       <a id="calendar1" href="#calendar-section">Availability</a>
       <a id="reservation1" href="#reservation-section">Customer Service</a>
   </div>
@@ -412,7 +370,7 @@ footer{
           <div class="flex">
             <button class="btn-hover color-10"><a id="botton-css" href="#calendar-section">Check availbility</a></button>
           </div>
-          <!-- <button class="button"><span>Check availbility</span></button> -->
+          
       </div>
   </div>
 </section>
@@ -422,7 +380,9 @@ footer{
 
 <section id="explore-section">
 
-  <p class="explore-title"> Explore </p>
+  <p class="explore-title" style="margin-top: 100px; font-size: 50px;font-family: 'Courgette', cursive;
+  text-align: center; color: #C2185B;"> Explore </p>
+
 
   <!-- ------------------ First row ----------------------- -->
 
@@ -435,7 +395,7 @@ footer{
         </p>
       </div>
       <div class="zjy">
-<!--       <img src="img/zjy.jpg" style="width: 100%"> -->
+
       </div>
     </div>
 
@@ -444,7 +404,6 @@ footer{
 
       <div class="row2">
         <div class="cl">
-          <!-- <img src="img/sf.jpg" style="width: 100%"> -->
         </div>
         <div class="text2">
           <div class="text2here">
@@ -461,51 +420,17 @@ footer{
 <section class="event" id="calendar-section">
 
 
-  <h1 class="lastest-schedule"> Event & Promotions </h1>
+  <h1 class="lastest-schedule" style="margin-bottom: 100px;"> Event & Promotions </h1>
   
   <div class="event-calendar"></div>
 
 </section>
 
-
-
-  
-
-
-  <!-- <div class="title-explore"> Explore us</div>
-
-  <div class="row">
-    <div class="column">
-        <img src="img/zjy.jpg" alt="Snow" style="width:100%; height: 370px;"> -->
-    <!-- </div>
-       <div class="column2">
-          <div class="textbox">
-              <h3> Manicure </h3>
-              <p> Our manicures use the finest products and always include a special relaxing aromatherapy hand and lower arm massage.  Nails are carefully and meticulously prepped and then polished to perfection. </p>
-          
-          </div>
-      </div>
-  
-  </div>
-
-    <div class="row2">
-      <div class="textbox2">
-         <div class="column4">
-          <h3>Pedicures</h3>
-          <p>Our pedicures are thorough and deeply relaxing.  Each pedicure incorporate special massage techniques specifically developed for feet and lower legs. Toenails are meticulously prepped and polished to perfection.</p>
-        </div>
-      </div>
-      <div class="column3">
-        <img src="img/cl.jpg" style="width: 100%; ">  -->
-      <!-- </div> -->
-  <!-- </div> -->
-
-
 <!-- ================= Make a reservation ================= -->
 
 <section id="reservation-section">
   <div id= "reservation">
-      <h1 class="reservation-title"  style="color: #C2185B;  font-size: 45px; ">Customer Service</h1>
+      <h1 class="reservation-title"  style="color: #C2185B;  font-size: 45px; margin-bottom: 100px; ">Customer Service</h1>
       <div class="email">
         <div class="emailhere">
           <img src="img/email.png" style="display: inline-block;">
@@ -543,42 +468,9 @@ footer{
     $('#navbar a.active').removeClass('active');
     $(this).addClass('active');
 });
-		// window.onscroll = function() {myFunction()};
-
-		// var navbar = document.getElementById("navbar");
-		// var sticky = navbar.offsetTop;
-
-		// function myFunction() {
-		//   if (window.pageYOffset >= sticky) {
-		//     navbar.classList.add("sticky")
-		//   } else {
-		//     navbar.classList.remove("sticky");
-		//   }
-		// }
+		
 </script>
-<!-- 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-	</script> -->
-  
 
-
-  <script type="text/javascript">
-
-
-
-    // window.addEventListener("scroll", function(e) {
-  
-    //     let top = window.scrollY;
-          
-    //       if (top > 200 ){
-    //         $('#navbar').css('top', '0');
-    //       }
-    //       console.log(top);
-    //  });
-
-
-    
-
-  </script>
 
   <script type="text/javascript">
     $(document).ready(function() {
@@ -593,19 +485,19 @@ footer{
       }); 
       $('#calendar1').click(function(){
         // console.log(homeHeight);
-        $('html, body').animate({scrollTop: homeHeight + exploreHeight + 90}, 1000);
+        $('html, body').animate({scrollTop: homeHeight + exploreHeight + 550}, 1000);
       });
 
       $('#botton-css').click(function(){
         // console.log(homeHeight);
-        $('html, body').animate({scrollTop: homeHeight + exploreHeight + 90}, 1000);
+        $('html, body').animate({scrollTop: homeHeight + exploreHeight + 550}, 1000);
       });
 
       $('#explore1').click(function(){
-        $('html, body').animate({scrollTop: homeHeight + 50}, 1000);
+        $('html, body').animate({scrollTop: homeHeight + 280}, 1000);
       });
       $('#reservation1').click(function(){
-        $('html, body').animate({scrollTop: homeHeight + calendarHeight + exploreHeight + 200}, 1000);
+        $('html, body').animate({scrollTop: homeHeight + calendarHeight + exploreHeight + 700}, 1000);
       });
     });
 </script>
@@ -625,15 +517,6 @@ footer{
     });
 	
 
-  // [{
-  //   start: '2018-12-13 00:00',
-  //   end: '2018-12-14 6:00',
-  //   title: 'Due to the maintanc',
-  //   url: '#',
-  //   class: '',
-  //   color: '#FFFFFF',
-  //   data: {}}],
-  //   f
   
 </script>
 
